@@ -1,0 +1,47 @@
+.menu
+	width: 50px
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+	z-index: 1000
+	background: #0a4172
+	transition: 0.3s
+	cursor: pointer
+	opacity: 0.8
+	overflow: hidden
+	.option.search
+		width: 100%
+		background-color: #1a9bfc
+		border-left: 3px solid #1a9bfc
+	.option.toggle
+		width: 100%
+		margin-bottom: 50px
+	.option
+		width: 100%
+		background-color: #0a4172
+		height: 50px
+		line-height: 70px
+		border-left: 3px solid #0a4172
+		box-sizing: border-box
+		transition: 0.2s
+		position: relative
+		cursor: pointer
+		text-align: left
+		&:hover
+			background-color: #033258
+			border-left: 3px solid #2ca2e6
+		i
+			color: white
+			font-size: 28px
+			position: relative
+			margin-left: 6px
+		label
+			color: white
+			position: absolute
+			top: -10px
+			width: 190px
+			left: 50px
+	&:hover
+		width: 200px
+		opacity: 1
