@@ -1,0 +1,349 @@
+.menu {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+  background: #0a4172;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.8;
+  overflow: hidden; }
+  .menu .option.search {
+    width: 100%;
+    background-color: #1a9bfc;
+    border-left: 3px solid #1a9bfc; }
+  .menu .option.toggle {
+    width: 100%;
+    margin-bottom: 50px; }
+  .menu .option {
+    width: 100%;
+    background-color: #0a4172;
+    height: 50px;
+    line-height: 70px;
+    border-left: 3px solid #0a4172;
+    box-sizing: border-box;
+    transition: 0.2s;
+    position: relative;
+    cursor: pointer;
+    text-align: left; }
+    .menu .option:hover {
+      background-color: #033258;
+      border-left: 3px solid #2ca2e6; }
+    .menu .option i {
+      color: white;
+      font-size: 28px;
+      position: relative;
+      margin-left: 6px; }
+    .menu .option label {
+      color: white;
+      position: absolute;
+      top: -10px;
+      width: 190px;
+      left: 50px; }
+  .menu:hover {
+    width: 200px;
+    opacity: 1; }
+
+.login {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #86b1fe;
+  background: -moz-linear-gradient(-45deg, #86b1fe 0%, #0f3da7 100%);
+  background: -webkit-linear-gradient(-45deg, #86b1fe 0%, #0f3da7 100%);
+  background: linear-gradient(135deg, #86b1fe 0%, #0f3da7 100%); }
+  .login .formLogin {
+    min-width: 800px;
+    height: 600px;
+    border: 0px solid white;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    margin-top: -300px;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-shadow: 3px 2px 12px -2px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 3px 2px 12px -2px rgba(0, 0, 0, 0.54);
+    box-shadow: 3px 2px 12px -2px rgba(0, 0, 0, 0.54); }
+    .login .formLogin .image {
+      width: 360px;
+      overflow: hidden;
+      position: relative;
+      float: left; }
+      .login .formLogin .image .title {
+        position: absolute;
+        color: white;
+        padding: 20px; }
+      .login .formLogin .image .text {
+        position: absolute;
+        color: white;
+        top: 50px;
+        padding: 20px; }
+      .login .formLogin .image img {
+        height: 600px; }
+    .login .formLogin .form {
+      border: 0px solid black;
+      width: 450px;
+      position: relative;
+      float: right;
+      height: 100%; }
+      .login .formLogin .form .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 50px; }
+        .login .formLogin .form .logo img {
+          width: 100%; }
+      .login .formLogin .form .passLink {
+        color: red;
+        padding: 0 20px;
+        text-align: right;
+        color: gray;
+        font-size: 14px;
+        cursor: pointer;
+        font-style: italic;
+        position: relative;
+        margin-top: 25px; }
+      .login .formLogin .form .imputsText {
+        height: 50px;
+        margin-top: 10px;
+        padding: 0 20px; }
+        .login .formLogin .form .imputsText .button.facebook {
+          background-color: #36549a;
+          transition: 0.2s; }
+          .login .formLogin .form .imputsText .button.facebook:hover {
+            background-color: #4264b5; }
+        .login .formLogin .form .imputsText .button.google {
+          background-color: #d6492b;
+          transition: 0.2s; }
+          .login .formLogin .form .imputsText .button.google:hover {
+            background-color: #e2735b; }
+        .login .formLogin .form .imputsText .button {
+          border-radius: 6px;
+          height: 46px;
+          text-align: center;
+          color: white;
+          line-height: 46px;
+          cursor: pointer; }
+      .login .formLogin .form .separate {
+        margin: 30px 0;
+        border-top: 1px solid #bbbbbb;
+        text-align: center;
+        width: 90%;
+        margin: 50px auto 30px auto; }
+        .login .formLogin .form .separate span {
+          background: white;
+          color: #4c4c4c;
+          font-size: 16px;
+          position: relative;
+          top: -10px;
+          padding: 0 7px; }
+
+body {
+  background-color: #f3f3f3; }
+
+.topHeader {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #86b1fe;
+  background: -moz-linear-gradient(-45deg, #86b1fe 0%, #0f3da7 100%);
+  background: -webkit-linear-gradient(-45deg, #86b1fe 0%, #0f3da7 100%);
+  background: linear-gradient(135deg, #86b1fe 0%, #0f3da7 100%); }
+  .topHeader .logo {
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box; }
+    .topHeader .logo img {
+      height: 100%; }
+  .topHeader .button.ingresar {
+    border-radius: 6px;
+    text-align: center;
+    color: #0f3da7;
+    padding: 0 30px;
+    line-height: 38px;
+    cursor: pointer;
+    float: right;
+    background-color: white;
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    transition: 0.2s; }
+    .topHeader .button.ingresar:hover {
+      background-color: #e6e6e6; }
+
+.formRegistro.dos {
+  margin: 20px auto !important;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box; }
+
+.formRegistro {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  width: 450px;
+  margin: 40px auto;
+  background-color: white; }
+  .formRegistro .logoVillas {
+    width: 36%;
+    margin: 20px auto; }
+    .formRegistro .logoVillas img {
+      width: 100%; }
+  .formRegistro .texto {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+    color: #757575; }
+  .formRegistro #controls {
+    padding: 20px;
+    box-sizing: border-box; }
+    .formRegistro #controls .button {
+      border-radius: 6px;
+      padding: 10px;
+      background-color: #0f3da7;
+      color: white;
+      text-align: center;
+      margin: 30px 0 0 0;
+      cursor: pointer;
+      transition: 0.2s; }
+      .formRegistro #controls .button:hover {
+        background-color: #3f6cca; }
+
+.App-header {
+  width: 100%;
+  height: 600px;
+  position: relative; }
+  .App-header .backColor {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.99;
+    background: #130d2c;
+    background: -moz-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #130d2c), color-stop(51%, #31245a), color-stop(100%, #d81962));
+    background: -webkit-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: -o-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: -ms-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130d2c', endColorstr='#d81962', GradientType=1 ); }
+  .App-header .mainBanner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden; }
+    .App-header .mainBanner img {
+      height: 100%;
+      opacity: 0.3; }
+  .App-header .elemets {
+    border: 1px dotted white;
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -40%; }
+    .App-header .elemets .logo {
+      border: 0px dotted white;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      cursor: pointer; }
+      .App-header .elemets .logo img {
+        margin-top: 20px;
+        width: 60%; }
+    .App-header .elemets .userCart {
+      float: right;
+      border: 0px dotted white;
+      width: 140px;
+      height: 100px; }
+      .App-header .elemets .userCart .user, .App-header .elemets .userCart .cart {
+        cursor: pointer;
+        float: left;
+        width: 50%;
+        line-height: 130px;
+        text-align: center;
+        transition: 0.3s; }
+        .App-header .elemets .userCart .user i, .App-header .elemets .userCart .cart i {
+          color: white;
+          font-size: 40px; }
+        .App-header .elemets .userCart .user:hover, .App-header .elemets .userCart .cart:hover {
+          transform: scale(1.1); }
+
+.wInputText {
+  border: 0px dotted #c1c1c1;
+  border-bottom: 1px solid #bbbbbb;
+  color: white;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  padding: 0;
+  margin: 10px 0; }
+  .wInputText .icon {
+    color: gray;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 999;
+    cursor: pointer; }
+  .wInputText input {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    height: 60%;
+    outline-style: none;
+    padding: 0 5px;
+    font-size: 16px;
+    caret-color: #37539a;
+    color: #37539a;
+    background-color: transparent;
+    border: 0; }
+  .wInputText p.placeholder {
+    font-size: 15px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    bottom: 0;
+    border: 0px dotted red;
+    margin: 0;
+    padding: 5px;
+    transition: 0.3s; }
+  .wInputText p.placeholder.active {
+    bottom: 25px;
+    font-size: 12px; }
+  .wInputText .line {
+    transition: 0.3s;
+    width: 0;
+    left: 50%; }
+  .wInputText .line.active {
+    transition: 0.3s;
+    position: absolute;
+    bottom: -1px;
+    height: 3px;
+    background-color: #37539a;
+    width: 100%;
+    left: 0; }
+
+/*# sourceMappingURL=main.css.map */

@@ -9,9 +9,15 @@ class Home extends Component {
   render() {
     return (
       <div className={classes.Home}>
-          <Header />
-          <Menu />
-          <Footer />
+        
+         <div className={classes.imageBack}>
+            <img src="/images/makeahome.jpg" />
+         </div>
+         <div className={classes.titles}>
+          <h2>Estamos construyendo tu sitio</h2>
+          <h1>villasdetonanitla.com</h1>
+          <img src="images/logo.png" width="10%"/>
+        </div>
       </div>
     );
   }
